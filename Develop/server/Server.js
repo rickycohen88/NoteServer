@@ -13,6 +13,9 @@ const app = express();
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
+//Routes
+require("index.Route")(app);
+require("note.Route")(app);
 
 // this is the listener, which essentially starts the server
 app.listen(PORT,function(){
