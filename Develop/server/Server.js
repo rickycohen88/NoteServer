@@ -14,4 +14,4 @@ app.use(express.json());
 
 app.listen(PORT,function(){
     console.log("App is rinning on port" + PORT);
-})
+});
