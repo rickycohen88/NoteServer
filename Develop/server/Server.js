@@ -1,0 +1,17 @@
+const express = require("express");
+const path = require("path");
+const app = express();
+const port = process.envPORT || 3001;
+
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
+
+
+
+
+
+
+
+app.listen(PORT,function(){
+    console.log("App is rinning on port" + PORT);
+})
