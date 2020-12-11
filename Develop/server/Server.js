@@ -1,19 +1,20 @@
-let express = require("express");
+//Dependencies
+const express = require("express");
 const path = require("path");
-const app = express();
-const port = process.envPORT || 3001;
 
+
+// sets an the port to whatever is jiven by hardware or 3001
+const PORT = process.envPORT || 3001;
+
+//tells node we are creating an express server
+const app = express();
+
+//sets up express app to handle data parsing
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
-app.get("/",function(req,res){
-    res.sendFile(path.join(_dirname,"../public/index.html"));
-});
 
-
-
-
-
+// this is the listener, which essentially starts the server
 app.listen(PORT,function(){
     console.log("App is rinning on port" + PORT);
 });
