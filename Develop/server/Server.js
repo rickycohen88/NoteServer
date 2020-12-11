@@ -6,7 +6,9 @@ const port = process.envPORT || 3001;
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
-
+app.get("/",function(req,res){
+    res.sendFile(path.join(_dirname,"index.html"));
+});
 
 
 
