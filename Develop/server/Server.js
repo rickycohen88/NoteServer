@@ -11,6 +11,8 @@ const PORT = process.env.PORT || 3001;
 //sets up express app to handle data parsing
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
+
+//tells server to find static files here when looking for linked content
 app.use(express.static(path.join(__dirname, '../public')))
 //Routes
 
