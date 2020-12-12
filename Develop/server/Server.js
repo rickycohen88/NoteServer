@@ -13,8 +13,9 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
 //Routes
-require("../server/indexRoute")(app);
-require("../server/noteRoute")(app);
+
+//require("./api.route")(app);
+require("./htmlRoute")(app);
 
 // this is the listener, which essentially starts the server
 app.listen(PORT,function(){
