@@ -37,7 +37,7 @@ then use the project.
 ### screenshots / Code example
 ![Image](Develop/public/assets/img/Home.PNG "home page")<br>
 ![Image](Develop/public/assets/img/Main.PNG "main use page")<br>
-![Image](Develop/public/assets/img/Code.png "app.post")
+![Image](Develop/public/assets/img/Code.PNG "app.post")
 
 
 
