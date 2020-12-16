@@ -32,8 +32,6 @@ just download the files directly from git hub.
 simply navigate to this link [Heroku-Deployment](https://evening-lowlands-51185.herokuapp.com/).
 then use the project.
 
-[link](https://drive.google.com/file/d/1saeYyln8Aps54GtVENXMK6tF-FHgYmyM/view?usp=sharing)
-
 ### screenshots / Code example
 ![Image](Develop/public/assets/img/Home.PNG "home page")<br>
 ![Image](Develop/public/assets/img/Main.PNG "main use page")<br>
