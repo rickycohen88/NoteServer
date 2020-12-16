@@ -6,7 +6,7 @@ module.exports = function(app){
         console.log("recived request in noteRoute function");
         res.sendFile(path.join(__dirname,"../public/notes.html"));
     });
-    app.get("/*", function(req,res){
+    app.get("*", function(req,res){
         console.log("recived request in html function");
         res.sendFile(path.join(__dirname,"../public/index.html"));
     });

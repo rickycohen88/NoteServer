@@ -1,6 +1,8 @@
 //Dependencies
 const express = require("express");
 const path = require("path");
+const fs = require("fs");
+
 
 //tells node we are creating an express server
 const app = express();
@@ -16,7 +18,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '../public')))
 //Routes
 
-//require("./api.route")(app);
+require("./api.route")(app);
 require("./htmlRoute")(app);
 
 // this is the listener, which essentially starts the server
